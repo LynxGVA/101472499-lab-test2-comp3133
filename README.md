@@ -1,59 +1,80 @@
-# 101472499LabTest2Comp3133
+# COMP 3133 Lab Test 2
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.4.
+## Student Information
 
-## Development server
+* Name: Viktor Grygoriev
+* Student ID: 101472499
+* Course: COMP 3133
 
-To start a local development server, run:
+## Theme
+
+Harry Potter Theme
+
+## Project Description
+
+This Angular application fetches and displays Harry Potter character data using a public REST API.
+
+The app allows users to:
+
+* view a list of Harry Potter characters
+* filter characters by house
+* view detailed information for a selected character
+
+## Features Implemented
+
+* Angular latest version
+* HttpClient integration
+* Character list component
+* Character filter component
+* Character details component
+* Service for API calls
+* TypeScript interface for character data
+* Angular Material UI
+* Filter by house
+* Use of `@for`
+* Use of `@if`
+* Use of `@switch`
+* Use of `signal`
+
+## API Used
+
+Harry Potter API:
+https://hp-api.onrender.com/
+
+## Components
+
+* `characterlist`
+* `characterfilter`
+* `characterdetails`
+
+## Project Structure
+
+* `src/app/components` → Angular components
+* `src/app/services` → API service
+* `src/app/models` → TypeScript interfaces
+
+## How to Run the Project Locally
 
 ```bash
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Then open:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```text
+http://localhost:4200
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## Deployment Link
 
-```bash
-ng generate --help
-```
+https://101472499-lab-test2-comp3133.vercel.app/
 
-## Building
+## GitHub Repository
 
-To build the project run:
+https://github.com/LynxGVA/101472499-lab-test2-comp3133
 
-```bash
-ng build
-```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Author
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Viktor Grygoriev
