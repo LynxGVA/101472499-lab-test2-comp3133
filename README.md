@@ -74,6 +74,27 @@ https://101472499-lab-test2-comp3133.vercel.app/
 
 https://github.com/LynxGVA/101472499-lab-test2-comp3133
 
+## Screenshots
+
+### Character List
+
+![Character List](screenshots/character-list.png)
+
+### Filter by House
+
+![Filter](screenshots/filtered-list-by-house.png)
+
+### Character Details
+
+![Details](screenshots/details-page.png)
+
+### Service Code
+
+![Service](screenshots/harrypotter-ts.png)
+
+### Component Code
+
+![Component](screenshots/characterlist-ts.png)
 
 ## Author
 
