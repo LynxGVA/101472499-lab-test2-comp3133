@@ -1,0 +1,29 @@
+.page {
+  padding: 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.card {
+  padding-bottom: 10px;
+}
+
+.card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.house-label {
+  margin-top: 10px;
+}

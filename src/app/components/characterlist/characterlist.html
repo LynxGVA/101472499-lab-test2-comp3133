@@ -1,0 +1,50 @@
+<mat-toolbar color="primary">
+  Harry Potter Characters
+</mat-toolbar>
+
+<div class="page">
+  <app-characterfilter (houseSelected)="filterByHouse($event)"></app-characterfilter>
+
+  @if (loading()) {
+    <div class="loading">
+      <mat-spinner></mat-spinner>
+    </div>
+  } @else {
+    <div class="house-label">
+      @switch (selectedHouse()) {
+        @case ('Gryffindor') {
+          <mat-chip>Showing Gryffindor Characters</mat-chip>
+        }
+        @case ('Slytherin') {
+          <mat-chip>Showing Slytherin Characters</mat-chip>
+        }
+        @case ('Hufflepuff') {
+          <mat-chip>Showing Hufflepuff Characters</mat-chip>
+        }
+        @case ('Ravenclaw') {
+          <mat-chip>Showing Ravenclaw Characters</mat-chip>
+        }
+        @default {
+          <mat-chip>Showing All Characters</mat-chip>
+        }
+      }
+    </div>
+
+    <div class="grid">
+      @for (character of characters(); track character.id) {
+        <mat-card class="card">
+          <img mat-card-image [src]="character.image" [alt]="character.name">
+          <mat-card-content>
+            <h3>{{ character.name }}</h3>
+            <p>House: {{ character.house || 'No House' }}</p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-raised-button color="primary" (click)="openDetails(character.id)">
+              View Details
+            </button>
+          </mat-card-actions>
+        </mat-card>
+      }
+    </div>
+  }
+</div>

@@ -1,0 +1,8 @@
+<mat-form-field appearance="outline" class="w-100">
+  <mat-label>Filter by House</mat-label>
+  <mat-select [(ngModel)]="selectedHouse" (selectionChange)="onHouseChange()">
+    @for (house of houses; track house) {
+      <mat-option [value]="house">{{ house }}</mat-option>
+    }
+  </mat-select>
+</mat-form-field>

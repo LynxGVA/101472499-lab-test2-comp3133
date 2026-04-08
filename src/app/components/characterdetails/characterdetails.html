@@ -1,0 +1,30 @@
+<mat-toolbar color="accent">
+  Character Details
+</mat-toolbar>
+
+<div class="page">
+  <a routerLink="/" mat-raised-button color="primary">Back</a>
+
+  @if (loading()) {
+    <div class="loading">
+      <mat-spinner></mat-spinner>
+    </div>
+  } @else {
+    @if (character(); as c) {
+      <mat-card class="details-card">
+        <img mat-card-image [src]="c.image" [alt]="c.name">
+        <mat-card-content>
+          <h2>{{ c.name }}</h2>
+          <p><strong>Species:</strong> {{ c.species }}</p>
+          <p><strong>House:</strong> {{ c.house || 'No House' }}</p>
+          <p><strong>Wizard:</strong> {{ c.wizard ? 'Yes' : 'No' }}</p>
+          <p><strong>Ancestry:</strong> {{ c.ancestry || 'Unknown' }}</p>
+          <p><strong>Actor:</strong> {{ c.actor }}</p>
+          <p><strong>Wand Wood:</strong> {{ c.wand.wood || 'Unknown' }}</p>
+          <p><strong>Wand Core:</strong> {{ c.wand.core || 'Unknown' }}</p>
+          <p><strong>Wand Length:</strong> {{ c.wand.length || 'Unknown' }}</p>
+        </mat-card-content>
+      </mat-card>
+    }
+  }
+</div>

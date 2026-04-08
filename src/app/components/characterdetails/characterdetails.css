@@ -1,0 +1,19 @@
+.page {
+  padding: 20px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.details-card {
+  max-width: 500px;
+  margin: 20px auto;
+}
+
+.details-card img {
+  height: 500px;
+  object-fit: cover;
+}
